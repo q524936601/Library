@@ -19,7 +19,8 @@
         <activity android:name=".dengluActivity" />
         <activity android:name=".GuanLiYuanActivity" />
         <activity android:name=".TJshujiActivity" />
-        <activity android:name=".ChaXunActivity"></activity>
+        <activity android:name=".ChaXunActivity" />
+        <activity android:name=".GuanlidengActivity"></activity>
     </application>
 
 </manifest>
