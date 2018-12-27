@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".dengluActivity" />
         <activity android:name=".GuanLiYuanActivity" />
-        <activity android:name=".TJshujiActivity"></activity>
+        <activity android:name=".TJshujiActivity" />
+        <activity android:name=".ChaXunActivity"></activity>
     </application>
 
 </manifest>
