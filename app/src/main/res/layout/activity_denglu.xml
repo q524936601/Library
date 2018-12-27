@@ -49,6 +49,7 @@
         android:text="返回"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_denglu_duzhe"
         app:layout_constraintStart_toStartOf="@+id/btn_denglu_duzhe"
         app:layout_constraintTop_toBottomOf="@+id/btn_denglu_duzhe" />
 </android.support.constraint.ConstraintLayout>
