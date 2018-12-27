@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuanLiYuanActivity">
+
+    <Button
+        android:id="@+id/btn_guanli_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="返回"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_guanli_chaxun"
+        app:layout_constraintTop_toBottomOf="@+id/btn_guanli_chaxun" />
+
+    <Button
+        android:id="@+id/btn_guanli_tianjia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:text="添加书籍"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_guanli_shanchu"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.48000002" />
+
+    <Button
+        android:id="@+id/btn_guanli_chaxun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询书籍"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_guanli_exit"
+        app:layout_constraintEnd_toEndOf="@+id/btn_guanli_shanchu"
+        app:layout_constraintStart_toStartOf="@+id/btn_guanli_shanchu"
+        app:layout_constraintTop_toBottomOf="@+id/btn_guanli_shanchu" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="管理员界面"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <Button
+        android:id="@+id/btn_guanli_shanchu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除书籍"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_guanli_chaxun"
+        app:layout_constraintEnd_toEndOf="@+id/btn_guanli_tianjia"
+        app:layout_constraintStart_toStartOf="@+id/btn_guanli_tianjia"
+        app:layout_constraintTop_toBottomOf="@+id/btn_guanli_tianjia" />
+</android.support.constraint.ConstraintLayout>
