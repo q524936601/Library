@@ -22,11 +22,10 @@
         android:id="@+id/btn_denglu_guanli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:text="管理员登录"
+        android:text="管理员"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_denglu_duzhe"
+        app:layout_constraintEnd_toEndOf="@+id/tv_denglu_title"
         app:layout_constraintStart_toStartOf="@+id/tv_denglu_title"
         app:layout_constraintTop_toBottomOf="@+id/tv_denglu_title" />
 
@@ -34,11 +33,10 @@
         android:id="@+id/btn_denglu_duzhe"
         android:layout_width="87dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
         android:text="读者"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_denglu_fanhui"
+        app:layout_constraintEnd_toEndOf="@+id/btn_denglu_guanli"
         app:layout_constraintStart_toStartOf="@+id/btn_denglu_guanli"
         app:layout_constraintTop_toBottomOf="@+id/btn_denglu_guanli" />
 
