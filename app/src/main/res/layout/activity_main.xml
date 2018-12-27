@@ -6,4 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/tv_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="图书信息管理系统"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_main_denglu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_main_zhuce"
+        app:layout_constraintEnd_toEndOf="@+id/tv_main_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_title" />
+
+    <Button
+        android:id="@+id/btn_main_zhuce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_main_exit"
+        app:layout_constraintEnd_toEndOf="@+id/btn_main_denglu"
+        app:layout_constraintStart_toStartOf="@+id/btn_main_denglu"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main_denglu" />
+
+    <Button
+        android:id="@+id/btn_main_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_main_zhuce"
+        app:layout_constraintStart_toStartOf="@+id/btn_main_zhuce"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main_zhuce" />
 </android.support.constraint.ConstraintLayout>
