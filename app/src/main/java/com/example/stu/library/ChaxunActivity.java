@@ -8,6 +8,6 @@ public class ChaxunActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cha_xun);
+        setContentView(R.layout.activity_chaxun);
     }
 }
