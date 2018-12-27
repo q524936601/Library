@@ -18,35 +18,43 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_main_denglu"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_main_tianjia"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:text="登录"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_main_zhuce"
+        android:text="添加书籍"
+        app:layout_constraintBottom_toTopOf="@+id/btn_main_chaxun"
         app:layout_constraintEnd_toEndOf="@+id/tv_main_title"
         app:layout_constraintStart_toStartOf="@+id/tv_main_title"
         app:layout_constraintTop_toBottomOf="@+id/tv_main_title" />
 
     <Button
-        android:id="@+id/btn_main_zhuce"
+        android:id="@+id/btn_main_chaxun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="注册"
-        android:textSize="36sp"
+        android:text="查询书籍"
+        app:layout_constraintBottom_toTopOf="@+id/btn_main_shanchu"
+        app:layout_constraintEnd_toEndOf="@+id/btn_main_tianjia"
+        app:layout_constraintStart_toStartOf="@+id/btn_main_tianjia"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main_tianjia" />
+
+    <Button
+        android:id="@+id/btn_main_shanchu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除书籍"
         app:layout_constraintBottom_toTopOf="@+id/btn_main_exit"
-        app:layout_constraintEnd_toEndOf="@+id/btn_main_denglu"
-        app:layout_constraintStart_toStartOf="@+id/btn_main_denglu"
-        app:layout_constraintTop_toBottomOf="@+id/btn_main_denglu" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_main_chaxun"
+        app:layout_constraintStart_toStartOf="@+id/btn_main_chaxun"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main_chaxun" />
 
     <Button
         android:id="@+id/btn_main_exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="退出"
-        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn_main_zhuce"
-        app:layout_constraintStart_toStartOf="@+id/btn_main_zhuce"
-        app:layout_constraintTop_toBottomOf="@+id/btn_main_zhuce" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_main_shanchu"
+        app:layout_constraintStart_toStartOf="@+id/btn_main_shanchu"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main_shanchu" />
+
 </android.support.constraint.ConstraintLayout>

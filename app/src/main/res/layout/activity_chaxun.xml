@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChaXunActivity">
+    tools:context=".ChaxunActivity">
 
     <TextView
         android:id="@+id/tv_cx_title"
@@ -48,9 +48,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="点击查询"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:text="查询"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/btn_cx_exit"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cx_shanchu"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,14 +62,14 @@
         android:id="@+id/btn_cx_exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
         android:text="返回"
         android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btn_cx_dianji"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_cx_shanchu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_cx_dianji" />
+        app:layout_constraintStart_toEndOf="@+id/btn_cx_shanchu" />
 
     <TextView
         android:id="@+id/tv_cx_xianshi"
@@ -84,4 +86,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_cx_dianji" />
+
+    <Button
+        android:id="@+id/btn_cx_shanchu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_cx_dianji"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cx_exit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_cx_dianji" />
 </android.support.constraint.ConstraintLayout>

@@ -3,7 +3,7 @@ package com.example.stu.library;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ChaXunActivity extends AppCompatActivity {
+public class ChaxunActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
