@@ -11,7 +11,7 @@ public class Myhelper extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql="create table information(_id integer primary key autoincrement,name varchar(20),zuozhe varchar(20),chubanshe varchar(20),number,integer)";
+        String sql="create table information(_id integer primary key autoincrement,number,integer,name varchar(20),zuozhe varchar(20),chubanshe varchar(20))";
         db.execSQL(sql);
     }
     @Override

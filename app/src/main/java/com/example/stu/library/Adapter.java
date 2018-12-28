@@ -32,7 +32,7 @@ public class Adapter {
         ContentValues values=new ContentValues();
         values.put("number",infor.getNumber());
         values.put("name",infor.getName());
-        values.put("zhuozhe",infor.getZuozhe());
+        values.put("zuozhe",infor.getZuozhe());
         values.put("chubanshe",infor.getChubanshe());
 
         Long rowid=db.insert("information",null,values);
