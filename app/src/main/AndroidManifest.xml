@@ -16,11 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".dengluActivity" />
-        <activity android:name=".GuanLiYuanActivity" />
         <activity android:name=".TJshujiActivity" />
-        <activity android:name=".ChaXunActivity" />
-        <activity android:name=".GuanlidengActivity"></activity>
+        <activity android:name=".ChaxunActivity" >
+        </activity>
     </application>
 
 </manifest>
