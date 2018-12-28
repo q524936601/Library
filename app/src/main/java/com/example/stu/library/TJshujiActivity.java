@@ -36,6 +36,12 @@ public class TJshujiActivity extends AppCompatActivity {
                 adapter.insert(infor);
             }
         });
+        findViewById(R.id.btn_TJ_exit).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
 
 
