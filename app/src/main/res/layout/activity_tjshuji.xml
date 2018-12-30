@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/timg"
     tools:context=".TJshujiActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="添加书籍"
         android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,11 +118,12 @@
 
     <Button
         android:id="@+id/btn_TJ_tianjia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
         android:layout_marginTop="70dp"
+        android:background="@drawable/anniu"
         android:text="添加"
-        android:textSize="18sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/btn_TJ_exit"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,10 +131,11 @@
 
     <Button
         android:id="@+id/btn_TJ_exit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:background="@drawable/anniu"
         android:text="返回"
-        android:textSize="18sp"
+        android:textSize="30sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_TJ_tianjia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

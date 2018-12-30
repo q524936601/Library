@@ -4,57 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/timg"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tv_main_title"
+        style="@style/AlertDialog.AppCompat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:text="图书信息管理系统"
         android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_main_tianjia"
-        android:layout_width="88dp"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/anniu"
         android:text="添加书籍"
-        app:layout_constraintBottom_toTopOf="@+id/btn_main_chaxun"
-        app:layout_constraintEnd_toEndOf="@+id/tv_main_title"
-        app:layout_constraintStart_toStartOf="@+id/tv_main_title"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_main_chaxun"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_main_title" />
 
     <Button
         android:id="@+id/btn_main_chaxun"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:background="@drawable/anniu"
         android:text="查询书籍"
-        app:layout_constraintBottom_toTopOf="@+id/btn_main_shanchu"
-        app:layout_constraintEnd_toEndOf="@+id/btn_main_tianjia"
-        app:layout_constraintStart_toStartOf="@+id/btn_main_tianjia"
-        app:layout_constraintTop_toBottomOf="@+id/btn_main_tianjia" />
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_main_tianjia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_main_tianjia" />
 
     <Button
         android:id="@+id/btn_main_shanchu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/anniu"
         android:text="删除书籍"
-        app:layout_constraintBottom_toTopOf="@+id/btn_main_exit"
-        app:layout_constraintEnd_toEndOf="@+id/btn_main_chaxun"
-        app:layout_constraintStart_toStartOf="@+id/btn_main_chaxun"
-        app:layout_constraintTop_toBottomOf="@+id/btn_main_chaxun" />
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_main_exit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main_tianjia" />
 
     <Button
         android:id="@+id/btn_main_exit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:background="@drawable/anniu"
         android:text="退出"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn_main_shanchu"
-        app:layout_constraintStart_toStartOf="@+id/btn_main_shanchu"
-        app:layout_constraintTop_toBottomOf="@+id/btn_main_shanchu" />
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_main_shanchu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_main_shanchu" />
 
 </android.support.constraint.ConstraintLayout>
