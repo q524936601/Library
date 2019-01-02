@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/timg"
+    android:background="@drawable/beijing"
     tools:context=".TJshujiActivity">
 
     <TextView
@@ -121,7 +121,7 @@
         android:layout_width="150dp"
         android:layout_height="80dp"
         android:layout_marginTop="70dp"
-        android:background="@drawable/anniu"
+        android:background="@drawable/er"
         android:text="添加"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/btn_TJ_exit"
@@ -133,7 +133,7 @@
         android:id="@+id/btn_TJ_exit"
         android:layout_width="150dp"
         android:layout_height="80dp"
-        android:background="@drawable/anniu"
+        android:background="@drawable/yi"
         android:text="返回"
         android:textSize="30sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_TJ_tianjia"
