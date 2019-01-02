@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -19,6 +20,7 @@ public class ChaxunActivity extends AppCompatActivity {
     List<Infor> list;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,19 +28,28 @@ public class ChaxunActivity extends AppCompatActivity {
         edttiaojian = findViewById(R.id.edt_cx_tiaojian);
         lvdisplay = findViewById(R.id.lv_cx_display);
 
+
         findViewById(R.id.btn_cx_chaxun).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Adapter adapter = new Adapter(getApplicationContext());
-
                 list = adapter.queryAll();
                 lvdisplay.setAdapter(new MyAdpater());
             }
         });
 
+        findViewById(R.id.btn_cx_exit).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+
+
+
     }
-    Myhelper myHelper = new Myhelper(getApplicationContext(), "database.db", null, 1);
-    SQLiteDatabase db = myHelper.getWritableDatabase();
+
 
 
     class MyAdpater extends BaseAdapter {
