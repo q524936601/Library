@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/beijing"
+
     tools:context=".ChaxunActivity">
 
     <TextView
@@ -54,7 +54,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
-        android:background="@drawable/yi"
+        android:background="@drawable/ic_launcher_foreground"
         android:text="查询"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/btn_cx_shanchu"
@@ -69,7 +69,7 @@
         android:layout_height="80dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:background="@drawable/san"
+        android:background="@drawable/ic_launcher_foreground"
         android:text="返回"
         android:textSize="30sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_cx_shanchu"
@@ -81,7 +81,7 @@
         android:id="@+id/btn_cx_shanchu"
         android:layout_width="150dp"
         android:layout_height="80dp"
-        android:background="@drawable/er"
+        android:background="@drawable/ic_launcher_foreground"
         android:text="删除"
         android:textSize="30sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_cx_chaxun"
