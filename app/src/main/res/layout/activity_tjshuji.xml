@@ -99,14 +99,14 @@
         android:layout_marginTop="50dp"
         android:text="出版社："
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/edt_TJ_chuban"
+        app:layout_constraintEnd_toStartOf="@+id/edt_TJ_chubanshe"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_TJ_zuozhe" />
 
     <EditText
-        android:id="@+id/edt_TJ_chuban"
+        android:id="@+id/edt_TJ_chubanshe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
