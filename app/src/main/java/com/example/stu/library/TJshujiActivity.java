@@ -1,5 +1,6 @@
 package com.example.stu.library;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,8 +16,8 @@ public class TJshujiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tjshuji);
 
-        edtTxtbianhao=findViewById(R.id.edt_TJ_bianhao);
-        edtTxtshuming=findViewById(R.id.edt_TJ_shuming);
+        edtTxtbianhao=findViewById(R.id.edt_TJ_number);
+        edtTxtshuming=findViewById(R.id.edt_TJ_name);
         edtTxtzuozhe=findViewById(R.id.edt_TJ_zuozhe);
         edtTxtchubanshe=findViewById(R.id.edt_TJ_chuban);
 
@@ -43,6 +44,8 @@ public class TJshujiActivity extends AppCompatActivity {
             }
         });
 
+        Myhelper myhelper=new Myhelper(getApplicationContext(),"database.db",null,1);
+        SQLiteDatabase db=myhelper.getWritableDatabase();
 
 
     }
