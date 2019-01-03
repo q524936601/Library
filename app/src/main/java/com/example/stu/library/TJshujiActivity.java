@@ -1,6 +1,7 @@
 package com.example.stu.library;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +10,6 @@ import android.widget.EditText;
 
 public class TJshujiActivity extends AppCompatActivity {
     EditText edtTxtnumber,edtTxtname,edtTxtzuozhe,edtTxtchubanshe;
-    Button btntianjia,btnexit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +46,8 @@ public class TJshujiActivity extends AppCompatActivity {
         });
 
 
+        Myhelper myHelper=new Myhelper(getApplicationContext(),"database.db",null,1);
+        SQLiteDatabase db=myHelper.getWritableDatabase();
 
     }
 }

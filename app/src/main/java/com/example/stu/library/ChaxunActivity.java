@@ -21,13 +21,13 @@ public class ChaxunActivity extends AppCompatActivity {
     List<Infor> list;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chaxun);
         edttiaojian = findViewById(R.id.edt_cx_tiaojian);
         lvdisplay = findViewById(R.id.lv_cx_display);
+        final EditText edt_tiaojian = findViewById(R.id.edt_cx_tiaojian);
 
 
         findViewById(R.id.btn_cx_shanchu).setOnClickListener(new View.OnClickListener() {//删除
@@ -35,20 +35,24 @@ public class ChaxunActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //根据姓名，删除数据库表里的记录，1，2,3，。。。
                 String name=edttiaojian.getText().toString().trim();
+                String number=edttiaojian.getText().toString().trim();
                 Adapter adapter=new Adapter(getApplicationContext());
                 int num= 0;
                 num=adapter.delete(name);
 
                 Toast.makeText(getApplicationContext(),"删除记录条数："+String.valueOf(num),
                         Toast.LENGTH_SHORT).show();
+
             }
         });
         findViewById(R.id.btn_cx_chaxun).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String tiaojian = edt_tiaojian.getText().toString().trim();
                 Adapter adapter = new Adapter(getApplicationContext());
-                list = adapter.queryAll();
-                lvdisplay.setAdapter(new MyAdpater());
+                adapter.queryAll(tiaojian);
+                lvdisplay.setAdapter(new MyAdpater());;
+
             }
         });
 

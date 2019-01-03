@@ -48,24 +48,27 @@ public class Adapter {
         return result;
     }
 
-    public List<Infor> queryAll(){
+    public List<Infor> queryAll(String tiaojian){
         List<Infor>list=new ArrayList<Infor>();
         openDB();
-        Cursor cursor=db.query("information",null,null,null,null,
-                null,null);
-        if (cursor.moveToFirst()){
-            do {
-                long number=cursor.getLong(cursor.getColumnIndex("number"));
-                String name=cursor.getString(cursor.getColumnIndex("name"));
-                String zuozhe=cursor.getString(cursor.getColumnIndex("zuozhe"));
-                String chubanshe=cursor.getString(cursor.getColumnIndex("chubanshe"));
-                Infor infor=new Infor();
-                infor.setNumber(number);
-                infor.setName(name);
-                infor.setZuozhe(zuozhe);
-                infor.setChubanshe(chubanshe);
-            }while (cursor.moveToNext());
+        Cursor cursor=db.query("information",new String[]{"number","name","zuozhe","chubanshe"},"number = ? or name = ? or zuozhe = ? or chubanshe = ?",new String[]{tiaojian},null, null,null);
+        if (cursor.getCount() > 0){
+            if (cursor.moveToFirst()){
+                do {
+                    long number=cursor.getLong(cursor.getColumnIndex("number"));
+                    String name=cursor.getString(cursor.getColumnIndex("name"));
+                    String zuozhe=cursor.getString(cursor.getColumnIndex("zuozhe"));
+                    String chubanshe=cursor.getString(cursor.getColumnIndex("chubanshe"));
+                    Infor infor=new Infor();
+                    infor.setNumber(number);
+                    infor.setName(name);
+                    infor.setZuozhe(zuozhe);
+                    infor.setChubanshe(chubanshe);
+                    list.add(infor);
+                }while (cursor.moveToNext());
+            }
         }
+        cursor.close();
         closeDB();
         return list;
     }
@@ -73,7 +76,7 @@ public class Adapter {
     public int delete(String name){
         int result=-1;
         openDB();
-        result=db.delete("information","name=?",new String[]{name});
+        result=db.delete("information","name=? or zuozhe=?",new String[]{name});
         closeDB();
         return result;
     }
