@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+    android:background="@drawable/beijing"
     tools:context=".ChaxunActivity">
 
     <TextView
@@ -49,11 +50,11 @@
 
     <Button
         android:id="@+id/btn_cx_chaxun"
-        android:layout_width="150dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/ic_launcher_foreground"
         android:text="查询"
         android:textSize="30sp"
@@ -65,10 +66,10 @@
 
     <Button
         android:id="@+id/btn_cx_exit"
-        android:layout_width="150dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:background="@drawable/ic_launcher_foreground"
         android:text="返回"
         android:textSize="30sp"
@@ -79,8 +80,8 @@
 
     <Button
         android:id="@+id/btn_cx_shanchu"
-        android:layout_width="150dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:background="@drawable/ic_launcher_foreground"
         android:text="删除"
         android:textSize="30sp"

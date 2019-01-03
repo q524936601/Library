@@ -21,52 +21,52 @@
         app:layout_constraintVertical_bias="0.112" />
 
     <TextView
-        android:id="@+id/tv_TJ_bianhao"
+        android:id="@+id/tv_TJ_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="编号："
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/edt_TJ_bianhao"
+        app:layout_constraintEnd_toStartOf="@+id/edt_TJ_number"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_TJ_title" />
 
     <EditText
-        android:id="@+id/edt_TJ_bianhao"
+        android:id="@+id/edt_TJ_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tv_TJ_bianhao"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_TJ_number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tv_TJ_bianhao" />
+        app:layout_constraintStart_toEndOf="@+id/tv_TJ_number" />
 
     <TextView
-        android:id="@+id/tv_TJ_shuming"
+        android:id="@+id/tv_TJ_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="书名："
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/edt_TJ_shuming"
+        app:layout_constraintEnd_toStartOf="@+id/edt_TJ_name"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_TJ_bianhao" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_TJ_number" />
 
     <EditText
-        android:id="@+id/edt_TJ_shuming"
+        android:id="@+id/edt_TJ_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tv_TJ_shuming"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_TJ_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tv_TJ_shuming" />
+        app:layout_constraintStart_toEndOf="@+id/tv_TJ_name" />
 
     <TextView
         android:id="@+id/tv_TJ_zuozhe"
@@ -79,7 +79,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_TJ_shuming" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_TJ_name" />
 
     <EditText
         android:id="@+id/edt_TJ_zuozhe"

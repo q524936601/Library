@@ -5,7 +5,7 @@
     android:background="@drawable/beijing">
 
     <TextView
-        android:id="@+id/tv_listitem_bianhao"
+        android:id="@+id/tv_listitem_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -13,7 +13,7 @@
         android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/tv_listitem_shuming"
+        android:id="@+id/tv_listitem_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"

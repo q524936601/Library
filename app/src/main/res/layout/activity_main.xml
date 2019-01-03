@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/beijing"
+
     tools:context=".MainActivity">
 
     <TextView
@@ -24,9 +25,10 @@
         android:id="@+id/btn_main_tianjia"
         android:layout_width="150dp"
         android:layout_height="80dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/er"
         android:text="添加书籍"
+        android:textColor="@android:color/background_light"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/btn_main_chaxun"
         app:layout_constraintHorizontal_bias="0.5"
@@ -39,6 +41,7 @@
         android:layout_height="80dp"
         android:background="@drawable/san"
         android:text="查询书籍"
+        android:textColor="@android:color/background_light"
         android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_main_tianjia"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,6 +55,7 @@
         android:layout_marginTop="25dp"
         android:background="@drawable/si"
         android:text="删除书籍"
+        android:textColor="@android:color/background_light"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/btn_main_exit"
         app:layout_constraintHorizontal_bias="0.5"

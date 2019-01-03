@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -29,6 +30,19 @@ public class ChaxunActivity extends AppCompatActivity {
         lvdisplay = findViewById(R.id.lv_cx_display);
 
 
+        findViewById(R.id.btn_cx_shanchu).setOnClickListener(new View.OnClickListener() {//删除
+            @Override
+            public void onClick(View v) {
+                //根据姓名，删除数据库表里的记录，1，2,3，。。。
+                String name=edttiaojian.getText().toString().trim();
+                Adapter adapter=new Adapter(getApplicationContext());
+                int num= 0;
+                num=adapter.delete(name);
+
+                Toast.makeText(getApplicationContext(),"删除记录条数："+String.valueOf(num),
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
         findViewById(R.id.btn_cx_chaxun).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,6 +58,8 @@ public class ChaxunActivity extends AppCompatActivity {
                 finish();
             }
         });
+        Myhelper myhelper=new Myhelper(getApplicationContext(),"database.db",null,1);
+        SQLiteDatabase db=myhelper.getWritableDatabase();
 
 
 
