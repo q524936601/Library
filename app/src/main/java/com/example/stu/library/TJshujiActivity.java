@@ -1,5 +1,6 @@
 package com.example.stu.library;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class TJshujiActivity extends AppCompatActivity {
-    EditText edtTxtbianhao,edtTxtshuming,edtTxtzuozhe,edtTxtchubanshe;
+    EditText edtTxtnumber,edtTxtname,edtTxtzuozhe,edtTxtchubanshe;
     Button btntianjia,btnexit;
 
     @Override
@@ -15,16 +16,16 @@ public class TJshujiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tjshuji);
 
-        edtTxtbianhao=findViewById(R.id.edt_TJ_bianhao);
-        edtTxtshuming=findViewById(R.id.edt_TJ_shuming);
+        edtTxtnumber=findViewById(R.id.edt_TJ_number);
+        edtTxtname=findViewById(R.id.edt_TJ_name);
         edtTxtzuozhe=findViewById(R.id.edt_TJ_zuozhe);
-        edtTxtchubanshe=findViewById(R.id.edt_TJ_chuban);
+        edtTxtchubanshe=findViewById(R.id.edt_TJ_chubanshe);
 
         findViewById(R.id.btn_TJ_tianjia).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Long number=Long.valueOf(edtTxtbianhao.getText().toString().trim());
-                String name=edtTxtshuming.getText().toString().trim();
+                Long number=Long.valueOf(edtTxtnumber.getText().toString().trim());
+                String name=edtTxtname.getText().toString().trim();
                 String zuozhe=edtTxtzuozhe.getText().toString().trim();
                 String chubanshe=edtTxtchubanshe.getText().toString().trim();
                 Infor infor=new Infor();
@@ -34,6 +35,7 @@ public class TJshujiActivity extends AppCompatActivity {
                 infor.setChubanshe(chubanshe);
                 Adapter adapter=new Adapter(getApplicationContext());
                 adapter.insert(infor);
+
             }
         });
         findViewById(R.id.btn_TJ_exit).setOnClickListener(new View.OnClickListener() {
